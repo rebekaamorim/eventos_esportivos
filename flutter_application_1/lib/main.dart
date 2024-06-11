@@ -19,7 +19,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: LoginScreen(),
     );
   }
@@ -153,7 +155,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 60),
                           MaterialButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30)),
@@ -164,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const Menu(),
+                                  builder: (context) => const Perfil(),
                                   settings: RouteSettings(arguments: usu),
                                 ),
                               );
@@ -175,7 +177,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: const Text(
                                 'Entrar',
                                 style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                    TextStyle(color: Colors.white, fontSize: 30),
                               ),
                             ),
                           ),

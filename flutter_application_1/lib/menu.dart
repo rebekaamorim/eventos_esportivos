@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lista_eventos.dart';
+import 'package:flutter_application_1/eventos_repository.dart';
 
 void menu() {
   runApp(const Menu());
@@ -16,7 +17,7 @@ class Menu extends StatelessWidget {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
-          'Bem Vindo!',
+          'Fique por dentro de tudo!',
           style: TextStyle(
             fontSize: 30,
             color: Colors.white,
@@ -60,7 +61,7 @@ class Menu extends StatelessWidget {
                        Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const ListaEventos(),
+                                  builder: (context) =>  ListaEventos(titulo: 'Corrida',tabela: EventosRepository.tabela_corrida),
                                 ),
                       );
                     },
@@ -73,6 +74,12 @@ class Menu extends StatelessWidget {
                   const SizedBox(width: 20),
                   GestureDetector(
                     onTap: () {
+                       Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>  ListaEventos(titulo: 'Ciclismo',tabela: EventosRepository.tabela_ciclismo),
+                                ),
+                      );
                     },
                     child: Container(
                       height: 170,
@@ -88,6 +95,11 @@ class Menu extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
+                        Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>  ListaEventos(titulo: 'Futebol',tabela: EventosRepository.tabela_futebol),
+                                ),);
                     },
                     child: Container(
                       height: 170,
@@ -98,6 +110,12 @@ class Menu extends StatelessWidget {
                   const SizedBox(width: 20),
                   GestureDetector(
                     onTap: () {
+                      Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>  ListaEventos(titulo: 'Natação',tabela: EventosRepository.tabela_natacao),
+                                ),
+                      );
                     },
                     child: Container(
                       height: 170,

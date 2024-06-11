@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/menu.dart';
 
 class Perfil extends StatelessWidget {
   const Perfil({super.key});
@@ -83,7 +84,31 @@ class Perfil extends StatelessWidget {
                 ),)
               ],
             ),
-         
+            const SizedBox(height: 60),
+            MaterialButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
+              disabledColor: Colors.grey,
+              color: Colors.cyan[600],
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Menu(),
+                  
+                  ),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 100, vertical: 10),
+                child: const Text(
+                  'Entrar',
+                  style:
+                      TextStyle(color: Colors.white, fontSize: 30),
+                ),
+              ),
+            ),
           ],
         ),
       ),
