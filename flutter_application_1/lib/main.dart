@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/lista_eventos.dart';
+import 'package:flutter_application_1/menu.dart';
 import 'package:flutter_application_1/perfil.dart';
 
 class Login {
@@ -162,7 +164,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const Perfil(),
+                                  builder: (context) => const Menu(),
                                   settings: RouteSettings(arguments: usu),
                                 ),
                               );

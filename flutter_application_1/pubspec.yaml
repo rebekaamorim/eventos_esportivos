@@ -17,3 +17,26 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+
+assets:
+  - assets/imgs/corrida1.png
+  - assets/imgs/corrida2.png
+  - assets/imgs/corrida3.png
+  - assets/imgs/corrida4.png
+  - assets/imgs/corrida.png
+  - assets/imgs/btn1.png
+  - assets/imgs/btn2.png
+  - assets/imgs/btn3.png
+  - assets/imgs/btn4.png
+  - assets/imgs/bike1.png
+  - assets/imgs/bike2.png
+  - assets/imgs/bike3.png
+  - assets/imgs/bike4.png
+  - assets/imgs/bike5.png
+  - assets/imgs/nata1.png
+  - assets/imgs/nata2.png
+  - assets/imgs/nata3.png
+  - assets/imgs/nata4.png
+  - assets/imgs/nata5.png
+  
