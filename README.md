@@ -10,3 +10,4 @@ _<p align="justify">  O aplicativo (eventos esportivos) foi criado com o objetiv
 - [Principais widgets do projeto](https://github.com/rebekaamorim/eventos_esportivos/wiki/Principais-widgets-usados)
 - [Desenvolvimento do App e funcionamento](https://github.com/rebekaamorim/eventos_esportivos/wiki/Desenvolvimento-Aplicativo-SportPlay)
 - [MVP SportPlay](https://github.com/rebekaamorim/eventos_esportivos/wiki/MVP-do-aplicativo)
+- [Conteúdo e referências](https://github.com/rebekaamorim/eventos_esportivos/wiki/Conte%C3%BAdo-e-refer%C3%AAncias)
