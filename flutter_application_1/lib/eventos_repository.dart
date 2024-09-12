@@ -1,4 +1,5 @@
 import 'package:flutter_application_1/eventos.dart';
+import 'package:flutter_application_1/menu.dart';
 
 class EventosRepository{
   static List<Eventos> tabela_corrida = [
@@ -26,4 +27,5 @@ class EventosRepository{
     Eventos(nm_evento: 'C.E. Geraldo José De Almeida', imagem: 'imgs/fute3.png', data: 'segunda a sexta', hora: '07h00', local: 'Av. Agenor Couto de Magalhães,32 – Pirituba'),
     Eventos(nm_evento: 'C.E. Joerg Bruder', imagem: 'imgs/fute4.png', data: 'terças e quintas-feiras', hora: '10h00', local: 'Praça Jânio da Silva Quadros, 150, Vila Maria')
   ];
+  
 }

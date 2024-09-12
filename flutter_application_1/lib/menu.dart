@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lista_eventos.dart';
 import 'package:flutter_application_1/eventos_repository.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void menu() {
   runApp(const Menu());
@@ -9,7 +10,13 @@ void menu() {
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
-
+  
+  Future<void> _launchURL() async {
+   final Uri url = Uri.parse('https://www.sympla.com.br/eventos/sao-paulo-sp/esportivo');
+   if (!await launchUrl(url)) {
+        throw Exception('Could not launch $url');
+    }}
+    
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -125,10 +132,28 @@ class Menu extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(height: 40),
+               MaterialButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30)),
+                            disabledColor: Colors.grey,
+                            color: Colors.cyan[600],
+                            onPressed: _launchURL,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 10),
+                              child: const Text(
+                                'Veja outros esportes! :)',
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 30),
+                              ),
+                            ),
+                          ),
             ],
           ),
         ),
       ),
     );
   }
+  
 }
